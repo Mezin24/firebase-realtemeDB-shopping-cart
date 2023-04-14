@@ -8,8 +8,8 @@
 
 body {
   background-color: #fff3e2;
-  // font-family: 'Dancing Script', cursive;
   font-family: 'Montserrat', sans-serif;
+  user-select: none;
 }
 
 .app {
@@ -18,7 +18,7 @@ body {
 
 .logo {
   margin: 5rem 0 2rem;
-  width: 100%;
+  height: 200px;
 }
 
 .btn-primary {
@@ -67,11 +67,44 @@ button {
   gap: 0.5rem;
 
   li {
-    border: 2px solid $clr-secondary;
-    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: white;
+    padding: 0.5rem 1rem;
     border-radius: 7px;
     color: #555;
-    flex: 1;
     cursor: pointer;
+    min-width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+    &:hover {
+      color: $clr-light;
+      background-color: $clr-red;
+    }
   }
+}
+
+.btn-trash {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  box-shadow: none;
+  background-color: transparent;
+  border: none;
+  svg {
+    width: 35px;
+    height: 35px;
+    color: $clr-red;
+  }
+}
+
+.cart-msg {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: $clr-red;
+}
+.hide {
+  display: none;
 }
