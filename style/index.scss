@@ -58,3 +58,20 @@ button {
     filter: brightness(110%);
   }
 }
+
+.shopping-list {
+  list-style-type: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  li {
+    border: 2px solid $clr-secondary;
+    padding: 0.5rem;
+    border-radius: 7px;
+    color: #555;
+    flex: 1;
+    cursor: pointer;
+  }
+}
